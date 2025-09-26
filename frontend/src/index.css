@@ -1,0 +1,95 @@
+@import "leaflet/dist/leaflet.css";
+@import "./components/Utilities.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* Space for fixed navbar */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  background-color: #f8fafc; /* fallback */
+  background-attachment: fixed;
+}
+
+body.global-bg {
+  /* Background image assigned via inline style in App to avoid bundler resolution issues */
+  background: var(--global-bg-current, var(--global-bg-image, #0b1525)) center center / cover no-repeat fixed;
+  background-color: #0b1525; /* subtle base for slow loads */
+  transition: background-image 0.6s ease, filter 0.6s ease, opacity 0.6s ease;
+}
+
+@media (max-width: 768px) {
+  body.global-bg {
+    background-image: var(--global-bg-mobile-current, var(--global-bg-mobile, var(--global-bg-image)));
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+/* Placeholder low-res blur phase */
+body.global-bg.bg-loading {
+  filter: blur(6px) brightness(1.05);
+}
+
+body.global-bg.bg-ready {
+  filter: none;
+}
+
+/* Removed dark overlay pseudo-element per request */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}

@@ -1,0 +1,312 @@
+.budget-summary-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #3182ce;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+}
+
+.back-btn:hover {
+  color: #2c5aa0;
+}
+
+.summary-header {
+  margin-bottom: 2rem;
+}
+
+.summary-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+.trip-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.trip-info span {
+  color: #718096;
+  font-size: 1rem;
+}
+
+.status-badge {
+  background: #e6fffa;
+  color: #234e52;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.overview-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.overview-card h3 {
+  font-size: 1rem;
+  color: #718096;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c;
+}
+
+.amount.spent {
+  color: #805ad5;
+}
+
+.amount.remaining {
+  color: #48bb78;
+}
+
+.amount.over-budget {
+  color: #e53e3e;
+}
+
+.percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #48bb78;
+  transition: width 0.3s ease;
+}
+
+.categories-section {
+  margin-bottom: 3rem;
+}
+
+.categories-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.category-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+}
+
+.category-header h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a202c;
+}
+
+.category-amounts {
+  margin-bottom: 1rem;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.amount-row span:first-child {
+  color: #718096;
+}
+
+.amount-row .spent {
+  color: #805ad5;
+}
+
+.amount-row .remaining {
+  color: #48bb78;
+}
+
+.amount-row .over-budget {
+  color: #e53e3e;
+}
+
+.category-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category-progress .progress-bar {
+  flex: 1;
+  height: 6px;
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: #718096;
+  white-space: nowrap;
+}
+
+.expenses-section {
+  margin-bottom: 2rem;
+}
+
+.expenses-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.expenses-list {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.expense-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+
+.expense-details {
+  flex: 1;
+}
+
+.expense-details h5 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #1a202c;
+}
+
+.expense-details p {
+  color: #718096;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  margin: 0;
+}
+
+.expense-date {
+  color: #a0aec0;
+  font-size: 0.75rem;
+}
+
+.expense-amount {
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 1rem;
+}
+
+.warning-banner {
+  background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+  border: 1px solid #fc8181;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.warning-banner h3 {
+  color: #9b2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.warning-banner p {
+  color: #c53030;
+  margin: 0;
+}
+
+.error {
+  text-align: center;
+  padding: 3rem;
+  color: #e53e3e;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .budget-summary-page {
+    padding: 1rem;
+  }
+  
+  .trip-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .overview-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,219 @@
+/* Yatra360 Professional Tricolor Theme System */
+
+:root {
+  /* Primary Tricolor Scheme */
+  --primary-saffron: #FF9933;
+  --primary-white: #FFFFFF;
+  --primary-green: #138808;
+  
+  /* Extended Color Palette */
+  --saffron-light: #FFB366;
+  --saffron-dark: #E6851A;
+  --green-light: #1EA012;
+  --green-dark: #0F5F08;
+  
+  /* Accent Colors */
+  --accent-blue: #0056D3;
+  --accent-gold: #FFD700;
+  --accent-coral: #FF6B6B;
+  
+  /* Legacy Support */
+  --primary-color: var(--primary-saffron);
+  --primary-hover: var(--saffron-dark);
+  --primary-light: #FFF4E6;
+  --secondary-color: var(--primary-green);
+  --secondary-hover: var(--green-dark);
+  --secondary-light: #F0F9F0;
+  
+  /* Background Colors */
+  --bg-primary: var(--primary-white);
+  --bg-secondary: #F8FAFC;
+  --bg-light: #F1F5F9;
+  
+  /* Text Colors */
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-muted: #9CA3AF;
+  
+  /* Border Colors */
+  --border-color: #E5E7EB;
+  --border-light: #F3F4F6;
+  
+  /* Shadows */
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Tricolor Gradient Backgrounds */
+.bg-tricolor {
+  background: linear-gradient(135deg, 
+    var(--primary-saffron) 0%, 
+    var(--primary-white) 50%, 
+    var(--primary-green) 100%
+  );
+}
+
+.bg-india-flag {
+  background: linear-gradient(to bottom, 
+    var(--primary-saffron) 0%, 
+    var(--primary-saffron) 33.33%, 
+    var(--primary-white) 33.33%, 
+    var(--primary-white) 66.66%, 
+    var(--primary-green) 66.66%, 
+    var(--primary-green) 100%
+  );
+}
+
+/* Professional Button System */
+.btn-tricolor {
+  background: linear-gradient(135deg, var(--primary-saffron) 0%, var(--saffron-dark) 100%);
+  color: var(--primary-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.btn-tricolor:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-green {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--green-dark) 100%);
+  color: var(--primary-white);
+}
+
+/* Trust Indicators */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--secondary-light);
+  color: var(--primary-green);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.verified-badge {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--green-light) 100%);
+  color: var(--primary-white);
+}
+
+/* Price Display System */
+.price-display {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--primary-green);
+  font-size: 1.5rem;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-right: 0.5rem;
+}
+
+.price-discount {
+  background: var(--accent-coral);
+  color: var(--primary-white);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+/* Rating System */
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-stars {
+  color: var(--accent-gold);
+  font-size: 1.2rem;
+}
+
+.rating-text {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.rating-count {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Card System with Indian Aesthetics */
+.card-indian {
+  background: var(--bg-primary);
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-indian::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--bg-tricolor);
+}
+
+.card-indian:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-saffron);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .btn-tricolor,
+  .btn-green {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .price-display {
+    font-size: 1.25rem;
+  }
+  
+  .card-indian {
+    padding: 1rem;
+  }
+}
+
+/* Dark Theme Support for Tricolor */
+[data-theme="dark"] {
+  --bg-primary: #1F2937;
+  --bg-secondary: #374151;
+  --bg-light: #4B5563;
+  --text-primary: #F9FAFB;
+  --text-secondary: #D1D5DB;
+  --text-muted: #9CA3AF;
+  --border-color: #4B5563;
+  --border-light: #374151;
+}
+
+[data-theme="dark"] .card-indian {
+  background: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .trust-badge {
+  background: var(--bg-light);
+  color: var(--primary-saffron);
+}

@@ -1,0 +1,67 @@
+.region-detail-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 4rem;
+  background: #f9f9f9;
+}
+
+.region-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.region-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.region-section {
+  margin-top: 2rem;
+}
+
+.region-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.info-card {
+  background-color: #e8f0fe;
+  border-left: 5px solid #0077cc;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  background-color: #d6e6fd;
+  transform: translateY(-3px);
+}
+
+.fact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fact-list li {
+  padding: 8px 0;
+  font-size: 1rem;
+  color: #444;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}

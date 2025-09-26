@@ -1,0 +1,64 @@
+.explore-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.explore-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.explore-subtitle {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.explore-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.explore-card:hover {
+  transform: scale(1.03);
+}
+
+.explore-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.explore-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.explore-search {
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.explore-search:focus {
+  border-color: #5bdfe3;
+  outline: none;
+}

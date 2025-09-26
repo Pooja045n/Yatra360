@@ -1,0 +1,409 @@
+{
+    "andhra-pradesh": {
+        "name": "Andhra Pradesh",
+        "banner": "/images/andhra_pradesh.jpg",
+        "description": "Known for its rich culture, Tirupati temple, and beautiful coastline.",
+        "popularPlaces": ["Visakhapatnam", "Tirupati", "Araku Valley", "Vijayawada"],
+        "festivals": ["Ugadi", "Sankranti"],
+        "facts": [
+            "Home to the famous Tirumala Venkateswara Temple",
+            "Known as the 'Rice Bowl of India'"
+        ]
+    },
+    "arunachal-pradesh": {
+        "name": "Arunachal Pradesh",
+        "banner": "/images/arunachal_pradesh.jpg",
+        "description": "Land of the rising sun, famous for its scenic beauty and tribes.",
+        "popularPlaces": ["Tawang", "Ziro", "Itanagar", "Bomdila"],
+        "festivals": ["Losar", "Solung"],
+        "facts": [
+            "Easternmost state of India",
+            "Home to over 26 major tribes"
+        ]
+    },
+    "assam": {
+        "name": "Assam",
+        "banner": "/images/assam.jpg",
+        "description": "Known for tea gardens, wildlife, and the mighty Brahmaputra.",
+        "popularPlaces": ["Kaziranga", "Guwahati", "Majuli", "Sivasagar"],
+        "festivals": ["Bihu", "Ambubachi Mela"],
+        "facts": [
+            "World’s largest river island: Majuli",
+            "Famous for Assam Tea"
+        ]
+    },
+    "bihar": {
+        "name": "Bihar",
+        "banner": "/images/bihar.jpg",
+        "description": "Land of ancient universities and Buddhist heritage.",
+        "popularPlaces": ["Bodh Gaya", "Patna", "Nalanda", "Rajgir"],
+        "festivals": ["Chhath Puja", "Sonepur Mela"],
+        "facts": [
+            "Birthplace of Buddhism",
+            "Home to ancient Nalanda University"
+        ]
+    },
+    "chhattisgarh": {
+        "name": "Chhattisgarh",
+        "banner": "/images/chhattisgarh.jpg",
+        "description": "Known for waterfalls, forests, and tribal culture.",
+        "popularPlaces": ["Chitrakote Falls", "Jagdalpur", "Raipur", "Barnawapara"],
+        "festivals": ["Bastar Dussehra", "Madai Festival"],
+        "facts": [
+            "Rich in minerals and forests",
+            "Home to unique tribal festivals"
+        ]
+    },
+    "goa": {
+        "name": "Goa",
+        "banner": "/images/goa.jpg",
+        "description": "Famous for beaches, nightlife, and Portuguese heritage.",
+        "popularPlaces": ["Panaji", "Calangute", "Old Goa", "Dudhsagar Falls"],
+        "festivals": ["Carnival", "Shigmo"],
+        "facts": [
+            "Smallest state by area",
+            "Known for vibrant tourism"
+        ]
+    },
+    "gujarat": {
+        "name": "Gujarat",
+        "banner": "/images/gujarat.jpg",
+        "description": "Land of lions, vibrant festivals, and rich history.",
+        "popularPlaces": ["Ahmedabad", "Gir Forest", "Dwarka", "Kutch"],
+        "festivals": ["Navratri", "Rann Utsav"],
+        "facts": [
+            "Home to Asiatic lions",
+            "Birthplace of Mahatma Gandhi"
+        ]
+    },
+    "haryana": {
+        "name": "Haryana",
+        "banner": "/images/haryana.jpg",
+        "description": "Known for agriculture, sports, and historical sites.",
+        "popularPlaces": ["Kurukshetra", "Gurugram", "Panipat", "Faridabad"],
+        "festivals": ["Teej", "Holi"],
+        "facts": [
+            "Major contributor to India’s food grain production",
+            "Known for wrestling and sports"
+        ]
+    },
+    "himachal-pradesh": {
+        "name": "Himachal Pradesh",
+        "banner": "/images/himachal_pradesh.jpg",
+        "description": "Famous for hill stations, adventure sports, and apple orchards.",
+        "popularPlaces": ["Shimla", "Manali", "Dharamshala", "Kullu"],
+        "festivals": ["Kullu Dussehra", "Losar"],
+        "facts": [
+            "Known as 'Dev Bhoomi' (Land of Gods)",
+            "Popular for trekking and skiing"
+        ]
+    },
+    "jharkhand": {
+        "name": "Jharkhand",
+        "banner": "/images/jharkhand.jpg",
+        "description": "Land of forests, waterfalls, and minerals.",
+        "popularPlaces": ["Ranchi", "Jamshedpur", "Netarhat", "Deoghar"],
+        "festivals": ["Sarhul", "Karma"],
+        "facts": [
+            "Rich in mineral resources",
+            "Known for beautiful waterfalls"
+        ]
+    },
+    "karnataka": {
+        "name": "Karnataka",
+        "banner": "/images/karnataka.jpg",
+        "description": "Known for IT hub, heritage sites, and coffee plantations.",
+        "popularPlaces": ["Bengaluru", "Mysuru", "Hampi", "Coorg"],
+        "festivals": ["Dasara", "Ugadi"],
+        "facts": [
+            "Home to UNESCO site Hampi",
+            "Major IT hub of India"
+        ]
+    },
+    "kerala": {
+        "name": "Kerala",
+        "banner": "/images/kerala.jpg",
+        "description": "Known for its backwaters, greenery, and Ayurveda.",
+        "popularPlaces": ["Munnar", "Alleppey", "Kochi", "Wayanad"],
+        "festivals": ["Onam", "Vishu"],
+        "facts": [
+            "Called \"God’s Own Country\"",
+            "Highest literacy rate in India"
+        ]
+    },
+    "madhya-pradesh": {
+        "name": "Madhya Pradesh",
+        "banner": "/images/madhya_pradesh.jpg",
+        "description": "Heart of India, famous for wildlife and ancient temples.",
+        "popularPlaces": ["Khajuraho", "Bhopal", "Kanha", "Ujjain"],
+        "festivals": ["Diwali", "Holi"],
+        "facts": [
+            "Known for Khajuraho Temples",
+            "Home to several national parks"
+        ]
+    },
+    "maharashtra": {
+        "name": "Maharashtra",
+        "banner": "/images/maharashtra.jpg",
+        "description": "Explore the land of forts, culture, and Bollywood.",
+        "popularPlaces": ["Mumbai", "Pune", "Ajanta Caves", "Mahabaleshwar"],
+        "festivals": ["Ganesh Chaturthi", "Gudi Padwa"],
+        "facts": [
+            "Second-most populous state in India",
+            "Capital: Mumbai"
+        ]
+    },
+    "manipur": {
+        "name": "Manipur",
+        "banner": "/images/manipur.jpg",
+        "description": "Known for classical dance, Loktak Lake, and scenic beauty.",
+        "popularPlaces": ["Imphal", "Loktak Lake", "Moirang", "Ukhrul"],
+        "festivals": ["Yaoshang", "Lai Haraoba"],
+        "facts": [
+            "Home to the only floating national park",
+            "Rich in traditional dance forms"
+        ]
+    },
+    "meghalaya": {
+        "name": "Meghalaya",
+        "banner": "/images/meghalaya.jpg",
+        "description": "Abode of clouds, famous for rainfall and caves.",
+        "popularPlaces": ["Shillong", "Cherrapunji", "Mawsynram", "Dawki"],
+        "festivals": ["Wangala", "Shad Suk Mynsiem"],
+        "facts": [
+            "One of the wettest places on Earth",
+            "Known for living root bridges"
+        ]
+    },
+    "mizoram": {
+        "name": "Mizoram",
+        "banner": "/images/mizoram.jpg",
+        "description": "Land of rolling hills and vibrant tribal culture.",
+        "popularPlaces": ["Aizawl", "Champhai", "Lunglei", "Serchhip"],
+        "festivals": ["Chapchar Kut", "Mim Kut"],
+        "facts": [
+            "Predominantly tribal population",
+            "Known for bamboo dance"
+        ]
+    },
+    "nagaland": {
+        "name": "Nagaland",
+        "banner": "/images/nagaland.jpg",
+        "description": "Known for tribes, festivals, and scenic hills.",
+        "popularPlaces": ["Kohima", "Dimapur", "Mokokchung", "Mon"],
+        "festivals": ["Hornbill Festival", "Moatsu"],
+        "facts": [
+            "Home to 16 major tribes",
+            "Famous for Hornbill Festival"
+        ]
+    },
+    "odisha": {
+        "name": "Odisha",
+        "banner": "/images/odisha.jpg",
+        "description": "Land of temples, beaches, and classical dance.",
+        "popularPlaces": ["Puri", "Bhubaneswar", "Konark", "Chilika Lake"],
+        "festivals": ["Rath Yatra", "Durga Puja"],
+        "facts": [
+            "Famous for Jagannath Temple",
+            "Known for Odissi dance"
+        ]
+    },
+    "punjab": {
+        "name": "Punjab",
+        "banner": "/images/punjab.jpg",
+        "description": "Known for vibrant culture, food, and Golden Temple.",
+        "popularPlaces": ["Amritsar", "Chandigarh", "Ludhiana", "Jalandhar"],
+        "festivals": ["Baisakhi", "Lohri"],
+        "facts": [
+            "Land of five rivers",
+            "Famous for Punjabi cuisine"
+        ]
+    },
+    "rajasthan": {
+        "name": "Rajasthan",
+        "banner": "/images/rajasthan.jpg",
+        "description": "The land of kings, deserts, and vibrant traditions.",
+        "popularPlaces": ["Jaipur", "Udaipur", "Jaisalmer", "Mount Abu"],
+        "festivals": ["Desert Festival", "Teej"],
+        "facts": [
+            "Largest state by area in India",
+            "Home to the Thar Desert"
+        ]
+    },
+    "sikkim": {
+        "name": "Sikkim",
+        "banner": "/images/sikkim.jpg",
+        "description": "Known for mountains, monasteries, and biodiversity.",
+        "popularPlaces": ["Gangtok", "Pelling", "Lachung", "Tsomgo Lake"],
+        "festivals": ["Losar", "Saga Dawa"],
+        "facts": [
+            "Second smallest state",
+            "Home to Kanchenjunga"
+        ]
+    },
+    "tamil-nadu": {
+        "name": "Tamil Nadu",
+        "banner": "/images/tamilnadu.jpg",
+        "description": "A cultural hub of temples, classical music, and dance.",
+        "popularPlaces": ["Chennai", "Madurai", "Ooty", "Kanyakumari"],
+        "festivals": ["Pongal", "Karthigai Deepam"],
+        "facts": [
+            "One of the oldest civilizations in India",
+            "Rich Dravidian architecture"
+        ]
+    },
+    "telangana": {
+        "name": "Telangana",
+        "banner": "/images/telangana.jpg",
+        "description": "Known for Hyderabad, rich history, and cuisine.",
+        "popularPlaces": ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar"],
+        "festivals": ["Bonalu", "Bathukamma"],
+        "facts": [
+            "Youngest state of India (formed in 2014)",
+            "Famous for Hyderabadi Biryani"
+        ]
+    },
+    "tripura": {
+        "name": "Tripura",
+        "banner": "/images/tripura.jpg",
+        "description": "Known for palaces, temples, and natural beauty.",
+        "popularPlaces": ["Agartala", "Unakoti", "Neermahal", "Udaipur"],
+        "festivals": ["Kharchi Puja", "Garia Puja"],
+        "facts": [
+            "Third smallest state",
+            "Rich in tribal culture"
+        ]
+    },
+    "uttar-pradesh": {
+        "name": "Uttar Pradesh",
+        "banner": "/images/uttar_pradesh.jpg",
+        "description": "Land of the Taj Mahal, spiritual centers, and history.",
+        "popularPlaces": ["Agra", "Varanasi", "Lucknow", "Prayagraj"],
+        "festivals": ["Diwali", "Holi"],
+        "facts": [
+            "Most populous state in India",
+            "Home to the Taj Mahal"
+        ]
+    },
+    "uttarakhand": {
+        "name": "Uttarakhand",
+        "banner": "/images/uttarakhand.jpg",
+        "description": "Known for Himalayas, pilgrimage, and adventure.",
+        "popularPlaces": ["Dehradun", "Nainital", "Haridwar", "Rishikesh"],
+        "festivals": ["Kumbh Mela", "Ganga Dussehra"],
+        "facts": [
+            "Known as 'Dev Bhoomi'",
+            "Gateway to the Himalayas"
+        ]
+    },
+    "west-bengal": {
+        "name": "West Bengal",
+        "banner": "/images/west_bengal.jpg",
+        "description": "Land of literature, sweets, and cultural festivals.",
+        "popularPlaces": ["Kolkata", "Darjeeling", "Sundarbans", "Kalimpong"],
+        "festivals": ["Durga Puja", "Poila Boishakh"],
+        "facts": [
+            "Home to the Sundarbans",
+            "Famous for Bengali sweets"
+        ]
+    },
+    "andaman-nicobar": {
+        "name": "Andaman and Nicobar Islands",
+        "banner": "/images/andaman_nicobar.jpg",
+        "description": "Tropical islands with pristine beaches and marine life.",
+        "popularPlaces": ["Port Blair", "Havelock Island", "Neil Island", "Cellular Jail"],
+        "festivals": ["Island Tourism Festival", "Subhash Mela"],
+        "facts": [
+            "Group of 572 islands",
+            "Known for water sports"
+        ]
+    },
+    "chandigarh": {
+        "name": "Chandigarh",
+        "banner": "/images/chandigarh.jpg",
+        "description": "India’s first planned city, known for architecture and gardens.",
+        "popularPlaces": ["Rock Garden", "Sukhna Lake", "Rose Garden", "Sector 17"],
+        "festivals": ["Chandigarh Carnival", "Rose Festival"],
+        "facts": [
+            "Capital of Punjab and Haryana",
+            "Designed by Le Corbusier"
+        ]
+    },
+    "dadra-nagar-haveli": {
+        "name": "Dadra and Nagar Haveli",
+        "banner": "/images/dadra_nagar_haveli_daman_diu.jpg",
+        "description": "Union Territory with beaches, forts, and Portuguese heritage.",
+        "popularPlaces": ["Silvassa", "Daman", "Diu", "Vapi"],
+        "festivals": ["Nariyal Poornima", "Daman Festival"],
+        "facts": [
+            "Merged UT since 2020",
+            "Known for serene beaches"
+        ]
+    },
+    "daman-diu": {
+        "name": "Daman and Diu",
+        "banner": "/images/daman_diu.jpg",
+        "description": "Coastal paradise with Portuguese influence and beaches.",
+        "popularPlaces": ["Diu Fort", "Nagoa Beach", "Devka Beach", "Moti Daman Fort"],
+        "festivals": ["Diu Festival", "Christmas"],
+        "facts": [
+            "Former Portuguese colony",
+            "Known for serene beaches and historic forts"
+        ]
+    },
+    "delhi": {
+        "name": "Delhi",
+        "banner": "/images/delhi.jpg",
+        "description": "Capital city, rich in history, culture, and cuisine.",
+        "popularPlaces": ["Red Fort", "Qutub Minar", "India Gate", "Lotus Temple"],
+        "festivals": ["Diwali", "Republic Day"],
+        "facts": [
+            "National Capital Territory",
+            "Blend of old and new"
+        ]
+    },
+    "jammu-kashmir": {
+        "name": "Jammu and Kashmir",
+        "banner": "/images/jammu_kashmir.jpg",
+        "description": "Paradise on earth, known for valleys, lakes, and gardens.",
+        "popularPlaces": ["Srinagar", "Gulmarg", "Jammu", "Pahalgam"],
+        "festivals": ["Hemis", "Baisakhi"],
+        "facts": [
+            "Known for scenic beauty",
+            "Famous for saffron and dry fruits"
+        ]
+    },
+    "ladakh": {
+        "name": "Ladakh",
+        "banner": "/images/ladakh.jpg",
+        "description": "Land of high passes, monasteries, and adventure.",
+        "popularPlaces": ["Leh", "Pangong Lake", "Nubra Valley", "Zanskar"],
+        "festivals": ["Hemis Festival", "Losar"],
+        "facts": [
+            "Highest plateau in India",
+            "Known for unique culture"
+        ]
+    },
+    "lakshadweep": {
+        "name": "Lakshadweep",
+        "banner": "/images/lakshadweep.jpg",
+        "description": "Coral islands with turquoise waters and marine life.",
+        "popularPlaces": ["Kavaratti", "Agatti", "Bangaram", "Minicoy"],
+        "festivals": ["Id-ul-Fitr", "Milad-un-Nabi"],
+        "facts": [
+            "Smallest UT by area",
+            "Known for coral reefs"
+        ]
+    },
+    "puducherry": {
+        "name": "Puducherry",
+        "banner": "/images/puducherry.jpg",
+        "description": "French colonial heritage, beaches, and spiritual centers.",
+        "popularPlaces": ["Pondicherry", "Auroville", "Paradise Beach", "Promenade Beach"],
+        "festivals": ["Puducherry Carnival", "Masi Magam"],
+        "facts": [
+            "Known as 'The French Riviera of the East'",
+            "Blend of French and Indian culture"
+        ]
+    }
+}

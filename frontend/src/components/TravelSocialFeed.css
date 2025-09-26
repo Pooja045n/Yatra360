@@ -1,0 +1,645 @@
+/* Travel Social Feed - Instagram Style */
+
+.travel-social-feed {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.feed-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  border-radius: 20px;
+  color: #1F2937;
+}
+
+.feed-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.feed-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.feed-navigation {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  padding: 4px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tab {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #6B7280;
+}
+
+.nav-tab.active {
+  background: linear-gradient(135deg, #FF9933 0%, #E6851A 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+}
+
+.nav-tab:hover:not(.active) {
+  background: #F8FAFC;
+  color: #374151;
+}
+
+/* Stories Section */
+.stories-section {
+  margin-bottom: 2rem;
+}
+
+.stories-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 16px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stories-container::-webkit-scrollbar {
+  display: none;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.story-avatar {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-emoji {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.your-story .add-story {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: #FF9933;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.story-preview {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  background: #138808;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 2px solid white;
+}
+
+.story-name {
+  font-size: 12px;
+  color: #374151;
+  text-align: center;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Create Post Modal */
+.create-post-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.create-post-container {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.create-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.create-post-header h3 {
+  margin: 0;
+  color: #1F2937;
+  font-size: 1.2rem;
+}
+
+.close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #F3F4F6;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+}
+
+.create-post-content {
+  padding: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.post-textarea {
+  width: 100%;
+  min-height: 120px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #374151;
+  font-family: inherit;
+  margin-bottom: 16px;
+}
+
+.post-textarea::placeholder {
+  color: #9CA3AF;
+}
+
+.post-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #F8FAFC;
+  border-color: #FF9933;
+}
+
+.post-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #FF9933 0%, #E6851A 100%);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.3);
+}
+
+.btn-primary:disabled {
+  background: #D1D5DB;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: white;
+  color: #6B7280;
+  border: 1px solid #E5E7EB;
+}
+
+.btn-secondary:hover {
+  background: #F8FAFC;
+}
+
+/* Posts Container */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.post-header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-header .user-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF9933 0%, #138808 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+  color: #1F2937;
+  font-size: 14px;
+}
+
+.verified-badge {
+  color: #10B981;
+  font-size: 12px;
+}
+
+.user-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.username {
+  color: #6B7280;
+}
+
+.separator {
+  color: #D1D5DB;
+}
+
+.location {
+  color: #6B7280;
+}
+
+.post-options {
+  color: #9CA3AF;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.post-content {
+  padding: 0 20px 16px;
+}
+
+.post-text {
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+  color: #374151;
+  font-size: 15px;
+}
+
+.post-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.post-image {
+  aspect-ratio: 1;
+  background: #F3F4F6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.post-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  color: #FF9933;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+.post-engagement {
+  padding: 16px 20px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.engagement-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.engagement-actions .action-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.engagement-actions .action-btn:hover {
+  background: #F8FAFC;
+}
+
+.engagement-actions .action-btn.liked {
+  color: #EF4444;
+}
+
+.engagement-actions .action-btn.saved {
+  color: #FF9933;
+}
+
+.save-btn {
+  margin-left: auto;
+}
+
+.post-timestamp {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+/* Auth Required */
+.auth-required {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.auth-card {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.auth-card h2 {
+  margin: 0 0 1rem 0;
+  color: #1F2937;
+}
+
+.auth-card p {
+  margin: 0 0 2rem 0;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* Explore & Communities Sections */
+.explore-section,
+.communities-section {
+  padding: 2rem 0;
+}
+
+.explore-section h2,
+.communities-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1F2937;
+}
+
+.explore-grid,
+.communities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.explore-category,
+.community-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.explore-category:hover,
+.community-card:hover {
+  transform: translateY(-4px);
+}
+
+.explore-category h3,
+.community-card h3 {
+  margin: 0 0 1rem 0;
+  color: #1F2937;
+}
+
+.explore-category p,
+.community-card p {
+  margin: 0 0 1.5rem 0;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .travel-social-feed {
+    padding: 16px;
+  }
+  
+  .feed-header {
+    padding: 1.5rem;
+  }
+  
+  .feed-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .create-post-modal {
+    padding: 16px;
+  }
+  
+  .stories-container {
+    padding: 12px 0;
+  }
+  
+  .story-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .avatar-emoji {
+    width: 54px;
+    height: 54px;
+    font-size: 20px;
+  }
+  
+  .post-card {
+    border-radius: 12px;
+  }
+  
+  .post-header,
+  .post-content,
+  .post-engagement {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .explore-grid,
+  .communities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-tab {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .travel-social-feed {
+  background: #1F2937;
+  color: #F9FAFB;
+}
+
+[data-theme="dark"] .post-card,
+[data-theme="dark"] .create-post-container,
+[data-theme="dark"] .auth-card,
+[data-theme="dark"] .explore-category,
+[data-theme="dark"] .community-card {
+  background: #374151;
+  color: #F9FAFB;
+}
+
+[data-theme="dark"] .feed-navigation {
+  background: #374151;
+}
+
+[data-theme="dark"] .nav-tab {
+  color: #D1D5DB;
+}
+
+[data-theme="dark"] .nav-tab:hover:not(.active) {
+  background: #4B5563;
+  color: #F9FAFB;
+}

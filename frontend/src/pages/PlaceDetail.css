@@ -1,0 +1,75 @@
+.map-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.direction-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #0048ba;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.direction-btn:hover {
+  background-color: #003a99;
+}
+.place-detail-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .overlay {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.place-description {
+  padding: 2rem;
+  background: #fff;
+}
+
+.place-description h2 {
+  margin-bottom: 1rem;
+}
+
+.extras-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.extra-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.extra-card h3 {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,24 @@
+.itinerary-page { padding: 32px 0; }
+.itinerary-layout { display: flex; gap: 32px; align-items: flex-start; }
+.itinerary-toolbar { display:flex; gap:16px; margin:0 0 18px; }
+.itinerary-toolbar input, .itinerary-toolbar select { padding:10px 12px; border-radius:12px; border:1px solid #cbd5e1; background:rgba(255,255,255,0.85); font:inherit; }
+.itinerary-list { flex: 2; }
+.itinerary-form-panel { flex: 1; background: rgba(255,255,255,0.75); backdrop-filter: blur(10px); padding: 20px 24px; border-radius: 16px; box-shadow: 0 4px 24px -6px rgba(0,0,0,0.15); }
+.itinerary-items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.itinerary-item { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); padding: 16px 20px; border-radius: 14px; display: flex; justify-content: space-between; gap: 16px; box-shadow: 0 2px 12px -4px rgba(0,0,0,0.12); }
+.itinerary-item h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.itinerary-meta p { margin: 2px 0; font-size: 0.85rem; }
+.itinerary-actions { display: flex; flex-direction: column; gap: 8px; }
+.itinerary-actions button { border: none; padding: 6px 12px; border-radius: 8px; cursor: pointer; background: #4f46e5; color: #fff; font-size: 0.75rem; font-weight: 600; letter-spacing: .5px; }
+.itinerary-actions button.danger { background: #dc2626; }
+.itinerary-actions button:hover { opacity: .9; }
+.itinerary-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.75rem; text-transform: uppercase; letter-spacing: .5px; font-weight: 600; color: #334155; }
+.itinerary-form input, .itinerary-form textarea { padding: 10px 12px; border-radius: 10px; border: 1px solid #cbd5e1; font: inherit; background: rgba(255,255,255,0.9); }
+.itinerary-form .row { display: flex; gap: 16px; }
+.itinerary-form .form-actions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 12px; }
+.itinerary-form button { border: none; padding: 10px 18px; border-radius: 12px; font-weight: 600; cursor: pointer; background: #6366f1; color: #fff; letter-spacing: .5px; }
+.itinerary-form button.secondary { background: #475569; }
+.itinerary-form button:disabled { opacity: .5; cursor: default; }
+.itinerary-error { background: #fee2e2; color: #b91c1c; padding: 10px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 0.85rem; }
+.empty { opacity: .65; font-style: italic; }
+@media (max-width: 900px) { .itinerary-layout { flex-direction: column; } .itinerary-actions { flex-direction: row; } }
