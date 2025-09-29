@@ -10,6 +10,13 @@ try { compression = require('compression'); } catch { compression = null; }
 let helmet;
 try { helmet = require('helmet'); } catch { helmet = null; }
 require('dotenv').config();
+// Validate critical environment configuration (fails fast in production)
+try {
+  require('./config/validateEnv').validateEnv();
+} catch (e) {
+  console.error('Environment validation failed – exiting.');
+  process.exit(1);
+}
 
 // Capture process start for uptime calculations & health reporting
 const START_TIME = Date.now();
