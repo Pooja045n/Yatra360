@@ -7,15 +7,16 @@
  */
 require('dotenv').config({ path: __dirname + '/../.env' });
 const mongoose = require('mongoose');
+const { buildMongoUri } = require('../config/db');
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/yatra360';
+const MONGO_URI = buildMongoUri();
 
 async function run() {
   try {
-    await mongoose.connect(MONGO_URI);
-    console.log('[seed] Connected to Mongo');
+  await mongoose.connect(MONGO_URI);
+  console.log('[seed] Connected to Mongo ->', mongoose.connection.name);
 
     const demoUsers = [
       {

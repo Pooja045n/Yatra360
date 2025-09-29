@@ -1,0 +1,63 @@
+name: Deploy Yatra360
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    env:
+      # Expect these secrets to be configured in repository settings:
+      # VERCEL_TOKEN, VERCEL_ORG_ID, VERCEL_PROJECT_ID_FRONTEND
+      # RENDER_SERVICE_ID (backend), RENDER_API_KEY
+      # Optionally: REACT_APP_API_BASE override if needed at build time
+      NODE_ENV: production
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node (frontend build)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'frontend/package-lock.json'
+
+      - name: Install frontend deps
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: frontend
+        run: |
+          if [ -n "${{ secrets.REACT_APP_API_BASE }}" ]; then echo "REACT_APP_API_BASE=${{ secrets.REACT_APP_API_BASE }}" >> .env; fi
+          npm run build
+
+      - name: Deploy frontend to Vercel
+        working-directory: frontend
+        run: |
+          npm install --no-save vercel@latest
+          vercel --token ${{ secrets.VERCEL_TOKEN }} pull --yes --environment=production --scope ${{ secrets.VERCEL_ORG_ID }}
+          vercel deploy --prod --token ${{ secrets.VERCEL_TOKEN }} --scope ${{ secrets.VERCEL_ORG_ID }} --confirm
+
+      - name: Trigger Render backend deploy
+        if: success()
+        run: |
+          curl -s -X POST \
+            -H 'Accept: application/json' \
+            -H 'Authorization: Bearer ${{ secrets.RENDER_API_KEY }}' \
+            https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID }}/deploys
+
+      - name: Summary
+        run: |
+          echo "Deployment workflow executed. Check Vercel dashboard and Render service deploy logs." > summary.txt
+        shell: bash
+
+      - name: Upload summary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-summary
+          path: summary.txt
